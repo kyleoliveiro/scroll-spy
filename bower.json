@@ -1,0 +1,25 @@
+{
+  "name": "scroll-spy",
+  "description": "dom helper",
+  "main": "dist/scroll-spy.js",
+  "authors": [
+    "forsigner"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "scrollspy",
+    "scrollspy plugin",
+    "jquery scrollspy",
+    "bootstrap scrollspy",
+    "scroll"
+  ],
+  "homepage": "https://github.com/forsigner/scroll-spy",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
