@@ -73,7 +73,8 @@ function getItems(ary) {
     var id = ary[i].hash.replace(/^#/, '');
     var $target = document.getElementById(id);
     var offset = getOffsetRect($target);
-    items[i] = { top: offset.top, elem: ary[i] };
+    var height = window.getComputedStyle(document.getElementById(id))['height'];
+    items[i] = { height: parseInt(height), top: offset.top, elem: ary[i] };
   }
 
   return items;
@@ -83,7 +84,7 @@ function spy(items, className) {
   var find = 0;
 
   for (var i = 0, l = items.length; i < l; i++) {
-    if ($body.scrollTop < items[i].top) {
+    if ($body.scrollTop < items[i].top - items[i].height / 3) {
       find = i;
       break;
     }
