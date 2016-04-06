@@ -7,6 +7,8 @@ A light weight scroll spy library in vanilla js.
 
 [demo](http://forsigner.com/2016/03/10/fexo-doc-zh-cn/)
 
+![spy](http://forsigner.com/images/scroll-spy/scroll-spy.png)
+
 ## Installation
 
 #### bower
